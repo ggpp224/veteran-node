@@ -44,4 +44,8 @@ CREATE TABLE `enlishWords`.`words` (
   `title` VARCHAR(1000) NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+
+INSERT INTO `enlishWords`.`words` (`name`, `title`) VALUES ('seems', '似乎，好像');
+INSERT INTO `enlishWords`.`words` (`name`, `title`) VALUES ('matter', '问题，事情，麻烦');
+
 ```
