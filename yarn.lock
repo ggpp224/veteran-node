@@ -294,6 +294,13 @@
   version "1.3.5"
   resolved "https://registry.npmmirror.com/@types/mime/-/mime-1.3.5.tgz"
 
+"@types/mysql@^2.15.25":
+  version "2.15.25"
+  resolved "https://registry.yarnpkg.com/@types/mysql/-/mysql-2.15.25.tgz#a1dd241f2c95b1695ced5c336d567d5431aff698"
+  integrity sha512-pKjbzNu/xvD2xOx4psIfxu9CBg+GovLvQFk8NYTW3oT7Gf5QY65MvNgQNFvVb0nC3l9DCKGqBFYhujVrDqii4A==
+  dependencies:
+    "@types/node" "*"
+
 "@types/node-fetch@^2.6.1":
   version "2.6.11"
   resolved "https://registry.npmmirror.com/@types/node-fetch/-/node-fetch-2.6.11.tgz#9b39b78665dae0e82a08f02f4967d62c66f95d24"

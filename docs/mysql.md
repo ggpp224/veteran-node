@@ -36,16 +36,16 @@ sudo /usr/local/mysql/support-files/mysql.server start --skip-grant-tables
 ## sql
 
 ```sql
-create  database enlishWords
+create  database english_words
 
-CREATE TABLE `enlishWords`.`words` (
-  `id` INT NOT NULL,
+CREATE TABLE `english_words`.`words` (
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(250) NOT NULL,
   `title` VARCHAR(1000) NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
 
-INSERT INTO `enlishWords`.`words` (`name`, `title`) VALUES ('seems', '似乎，好像');
-INSERT INTO `enlishWords`.`words` (`name`, `title`) VALUES ('matter', '问题，事情，麻烦');
+INSERT INTO `english_words`.`words` (`name`, `title`) VALUES ('seems', '似乎，好像');
+INSERT INTO `english_words`.`words` (`name`, `title`) VALUES ('matter', '问题，事情，麻烦');
 
 ```

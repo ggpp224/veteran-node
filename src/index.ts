@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import {graphqlHTTP} from 'express-graphql';
 import {buildSchema} from "graphql";
 import mysql from 'mysql';
-import {schema} from "./schema.js";
+import {schema} from "./schema";
 
 
 dotenv.config();
@@ -14,6 +14,8 @@ const pool = mysql.createPool({
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE_NAME,
+    insecureAuth : true
+
 });
 
 
