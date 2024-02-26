@@ -39,7 +39,12 @@ const root = {
 const root = {
     Words: (obj, args, context, info) => {
         return new Promise((resolve, reject) => {
-            pool.query('SELECT * FROM words', (error, results) => {
+            const criteriaStr = obj.criteriaStr;
+            let sql = `SELECT * FROM words`;
+            if(criteriaStr){
+                sql += ` where ${criteriaStr}`
+            }
+            pool.query(sql, (error, results) => {
                 if (error) {
                     reject(error);
                 }

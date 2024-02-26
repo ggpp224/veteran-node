@@ -7,7 +7,7 @@ export const schema = buildSchema(`
   }
 
   type Query {
-    Words: [WordsSchema]
+    Words(criteriaStr: String): [WordsSchema]
   }
   
 `);
